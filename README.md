@@ -25,8 +25,8 @@ My key findings for Part I are as follows:
 ## Overview of Data Analysis
 
 ### Part I- 311 Complaints
-1) [00-review-data-structures-311-snow-related.ipynb](notebooks/00-review-data-structures-311-snow-related.ipynb)- Review 311 complaints data structures and explore data 
-2) [01-get-snow-violations-data.ipynb](notebooks/01-get-snow-violations-data.ipynb)- Acquire census data and 311 complaints data, parse dates and snow seasons
+1) [00-assess-data-311-snow-related.ipynb](notebooks/00-assess-data-311-snow-related.ipynb)- Review 311 complaints data structures and explore data 
+2) [01-prep-snow-violations-data.ipynb](notebooks/01-prep-snow-violations-data.ipynb)- Acquire census data and 311 complaints data, parse dates and snow seasons
 3) [02-summarize-311-snow-complaints-by-community.ipynb](notebooks/02-summarize-311-snow-complaints-by-community.ipynb)- Summarize 311 complaints data to identify communities with highest and lowest per capita rates of 311 complaints
 
 ### Part I- Preliminary Analysis of Fines
@@ -56,9 +56,12 @@ Due to typos and mispellings of addresses in the Administrative Hearings data on
 ## Guide to the Repository
 This repository is organized as follows:
 
-* [data](data/)- includes only my own manually-entered lookup table for CTA stations<br>
+* [data](data/)- includes only my own manually-entered lookup table for CTA stations
+   * [01-raw](data/01-raw/) data in its original format
+   * [02-prepped](data/02-prepped/) transformed, parsed, etc.
+   * [03-geocoded](data/03-geocoded/) outputs from QGIS including geospatial data
 * [layers](layers/)- QGIS work in geocoding and spatially joining data
 * [notebooks](notebooks/)- steps through the analysis.
-   * **x*** prefix designates exploratory analyses
    * **fines*** prefix designates notebooks specific to analysis of fines data for Part II of the story
+   * **x*** prefix designates exploratory analyses
 * [results](results/)- results output from Jupyter Notebook for mapping & charting in DataWrapper and Flourish
