@@ -11,8 +11,12 @@ The data analysis for Part I is summarized in <a href="https://github.com/reliab
 
 ## Key Findings
 My key findings for Part I are as follows:
-* <strong>3-1-1 complaints</strong> about unshoveled sidewalks are concentrated on the North Side. Lincoln Square ranks first with an average of fifty-seven complaints per 10,000 residents each year between 2019 and 2023. South and West Side communities have the fewest, with West Pullman last at only two complaints per 10,000 residents.
-* Preliminary analysis of Department of Administrative Hearings <strong>snow clearance fines</strong> data shows eight of the ten community areas with the most hearings for fines per capita are on the South Side. Englewood, which ranks forty-ninth in 3-1-1 complaints, had the most administrative hearings per capita since 2019, and the highest amount of fines levied. Lincoln Square, which ranks first in 3-1-1 complaints, was twenty-second in administrative hearing dockets per capita.
+* <strong>3-1-1 complaints</strong> about unshoveled sidewalks are concentrated on the North Side.
+   * **Lincoln Square** ranks first with an average of fifty-seven complaints per 10,000 residents each year between 2019 and 2023.
+   * South and West Side communities have the fewest, with **West Pullman** last at only two complaints per 10,000 residents.
+* Preliminary analysis of Department of Administrative Hearings <strong>snow clearance fines</strong> data shows eight of the ten community areas with the most hearings for fines per capita are on the South Side.
+   * **Englewood**, which ranks forty-ninth in 3-1-1 complaints, had the most administrative hearings per capita since 2019, and the highest amount of fines levied.
+   * **Lincoln Square**, which ranks first in 3-1-1 complaints, was twenty-second in administrative hearing dockets per capita.
 
 ## Data sources
 |Data Source|Description|
@@ -24,13 +28,13 @@ My key findings for Part I are as follows:
 ## Overview of Data Analysis Process
 
 ## What I Learned
-I learned to geocode and spatially join Administrative Hearings data in order to identify the community area associated with each fine.
+I learned to geocode Administrative Hearings address data to get lat and long coordinates, and then spatially join this data to identify the community areas associated with each fine.
 
 ## Data Quirks and Other E-Varmints Standing in My Righteous Path
 <ul>
 <li>
-Due to typos and mispellings of addresses, Administrative Hearings data on snow clearance fines required extensive manual cleaning.
-<li>I hoped to find a dataset of vacant properties that I could join to addresses identified in snow clearance fines, but that data is inconsistently tracked.
+Due to typos and mispellings of addresses in the Administrative Hearings data on snow clearance fines, some manual cleaning was required.
+<li>I hoped to find a dataset of vacant properties that I could join to addresses identified in snow clearance fines, but according to a source at the Cook County Assessor's office such a dataset may not exist.
 </ul>
 
 ## Guide to the Repository
