@@ -20,3 +20,23 @@ My key findings for Part I are as follows:
 |[311 Service Requests](https://data.cityofchicago.org/Service-Requests/311-Service-Requests/v6vf-nfxy/about_data)|Dataset including all 311 requests for service, including uncleared sidewalks|
 |[CMAP Community Data Snapshot](https://datahub.cmap.illinois.gov/datasets/CMAPGIS::community-data-snapshots-raw-data-2014-2022/explore?layer=21) |Demographic data including 2020 census population, organized by Chicago's 77 Community Areas|
 |[Chicago Department of Administrative Hearings- Snow Clearance Fee Citations](https://docs.google.com/spreadsheets/d/1TKkQvOkpihZGkiIZ_Hx-TVzoV6kXvZUETSD8h5YhlR0/edit?usp=drive_link)|Response to FOIA request H064920-011124|
+
+## Overview of Data Analysis Process
+
+## What I Learned
+I learned to geocode and spatially join Administrative Hearings data in order to identify the community area associated with each fine.
+
+## Data Quirks and Other E-Varmints Standing in My Righteous Path
+<ul>
+<li>
+Due to typos and mispellings of addresses, Administrative Hearings data on snow clearance fines required extensive manual cleaning.
+<li>I hoped to find a dataset of vacant properties that I could join to addresses identified in snow clearance fines, but that data is inconsistently tracked.
+</ul>
+
+## Guide to the Repository
+This repository is organized as follows:
+
+* [data](data/)- includes only my own manually-entered lookup table for CTA stations
+* [layers](layers/)- QGIS work in geocoding and spatially joining data
+* [notebooks](notebooks/)- steps through the analysis
+* [results](results/)- results output from Jupyter Notebook for mapping & charting in DataWrapper and Flourish
