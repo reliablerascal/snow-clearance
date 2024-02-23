@@ -36,7 +36,8 @@ Due to typos and mispellings of addresses, Administrative Hearings data on snow 
 ## Guide to the Repository
 This repository is organized as follows:
 
-* [data](data/)- includes only my own manually-entered lookup table for CTA stations
+* [data](data/)- includes only my own manually-entered lookup table for CTA stations<br>
 * [layers](layers/)- QGIS work in geocoding and spatially joining data
-* [notebooks](notebooks/)- steps through the analysis
+* [notebooks](notebooks/)- steps through the analysis<br>
+   * [02-summarize-311-snow-complaints-by-community.ipynb](notebooks/02-summarize-311-snow-complaints-by-community.ipynb) - analysis of 311 complaints data per capita, in support of Part I<br>
 * [results](results/)- results output from Jupyter Notebook for mapping & charting in DataWrapper and Flourish
