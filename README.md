@@ -6,9 +6,6 @@ This data analysis supports a two-part series for South Side Weekly:
 <li><strong>Part II: Fines Don’t Shovel Sidewalks, but the South Side Pays Anyway</strong> will explore different snow clearance enforcement strategies by three different city departments, and what types of property owners are getting fined on the South Side. 
 </ul>
  
-The data analysis for Part I is summarized in <a href="https://github.com/reliablerascal/snow-clearance/blob/main/notebooks/02-summarize-311-snow-complaints-by-community.ipynb">/notebooks
-/02-summarize-311-snow-complaints-by-community.ipynb</a>.
-
 ## Key Findings
 My key findings for Part I are as follows:
 * <strong>3-1-1 complaints</strong> about unshoveled sidewalks are concentrated on the North Side.
@@ -25,7 +22,27 @@ My key findings for Part I are as follows:
 |[CMAP Community Data Snapshot](https://datahub.cmap.illinois.gov/datasets/CMAPGIS::community-data-snapshots-raw-data-2014-2022/explore?layer=21) |Demographic data including 2020 census population, organized by Chicago's 77 Community Areas|
 |[Chicago Department of Administrative Hearings- Snow Clearance Fee Citations](https://docs.google.com/spreadsheets/d/1TKkQvOkpihZGkiIZ_Hx-TVzoV6kXvZUETSD8h5YhlR0/edit?usp=drive_link)|Response to FOIA request H064920-011124|
 
-## Overview of Data Analysis Process
+## Overview of Data Analysis
+
+### Part I
+1) [00-review-data-structures-311-snow-related.ipynb](notebooks/00-review-data-structures-311-snow-related.ipynb)- Review 311 complaints data structures and explore data 
+2) [01-get-snow-violations-data.ipynb](notebooks/01-get-snow-violations-data.ipynb)- Acquire census data and 311 complaints data, parse dates and snow seasons
+3) [02-summarize-311-snow-complaints-by-community.ipynb](notebooks/02-summarize-311-snow-complaints-by-community.ipynb)- Summarize 311 complaints data to identify communities with highest and lowest per capita rates of 311 complaints
+</ul>
+
+### Part II
+1) [fines-01-prep-data.ipynb](notebooks/fines-01-prep-data.ipynb)- Read snow clearance fines data, parse dates, clean addresses and prepare for geocoding
+2) In **QGIS**:
+    <ol>
+    <li>gather files- points (CSV of snow clearance fines and addresses) and shapes (Chicago community areas GeoJSON)
+    <li>import fines/addresses as Delimited Text Layer
+    <li>geocode addresses using MMQGIS
+    <li>import Chicago Community Areas regions GeoJSON
+    <li>perform point-in-polygon spatial join
+    <li>export geocoded data as fines-geocoded-communities.csv
+    </ol>
+3) [02-summarize-311-snow-complaints-by-community.ipynb](02-summarize-311-snow-complaints-by-community.ipynb)- Summarize 311 complaints data to identify communities with highest and lowest per capita rates of 311 complaints
+</ol>
 
 ## What I Learned
 I learned to geocode Administrative Hearings address data to get lat and long coordinates, and then spatially join this data to identify the community areas associated with each fine.
@@ -43,5 +60,4 @@ This repository is organized as follows:
 * [data](data/)- includes only my own manually-entered lookup table for CTA stations<br>
 * [layers](layers/)- QGIS work in geocoding and spatially joining data
 * [notebooks](notebooks/)- steps through the analysis<br>
-   * [02-summarize-311-snow-complaints-by-community.ipynb](notebooks/02-summarize-311-snow-complaints-by-community.ipynb) - analysis of 311 complaints data per capita, in support of Part I<br>
 * [results](results/)- results output from Jupyter Notebook for mapping & charting in DataWrapper and Flourish
