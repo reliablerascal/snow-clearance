@@ -60,9 +60,17 @@ This repository is organized as follows:
    * [01-raw](data/01-raw/) source data in its original format
    * [02-tidied](data/02-prepped/) transformed, parsed, normalized data
    * [03-geocoded](data/03-geocoded/) dockets-to-addresses.csv geocoded by address to get lat & long coordinates
-   * [03-geocoded](data/04-spatially-joined/) dockets-to-addresses.csv joined to Chicago ward and community areas
+   * [04-spatially-joined](data/04-spatially-joined/) dockets-to-addresses.csv joined to Chicago ward and community areas
+   * [05-standardized](data/05-standardized/) dockets-to-addresses.csv joined to Chicago ward and community areas
+   * [06-aggregated](data/05-standardized/) dockets summarized by communities, wards, respondents, and addresses
 * [gis](gis/)- geographic data, including QGIS work in geocoding and spatially joining data
 * [notebooks](notebooks/)- data preparation and analysis in Python
+   * [01-data-preparation](notebooks/01-data-preparation/) notebooks for data pipeline which normalize, geocode, and standardize data
+   * [02-analysis](notebooks/02-analysis/) analysis notebooks which summarize data
    * **fines*** prefix designates notebooks specific to analysis of fines data for Part II of the story
    * **x*** prefix designates exploratory analyses
 * [results](results/)- analysis results for mapping & charting (e.g. in DataWrapper and Flourish)
+
+The following notebooks summarize data in support of <a href="https://southsideweekly.com/sidewalk-plowing-pilot-planned-for-next-winter/">Part I: Sidewalk-Plowing Pilot Planned for Next Winter</a></strong>:
+* [notebooks/02-analysis/ssw1-01-summarize-311-snow-complaints-by-community.ipynb](notebooks/02-analysis/ssw1-01-summarize-311-snow-complaints-by-community.ipynb)
+* [notebooks/02-analysis/ssw1-02-summarize-fines-by-community.ipynb](notebooks/02-analysis/ssw1-02-summarize-fines-by-community.ipynb)
