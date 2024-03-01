@@ -25,13 +25,11 @@ My key findings for Part I are as follows:
 ## Overview of Data Analysis
 
 ### Part I- 311 Complaints
-1) [00-assess-data-311-snow-related.ipynb](notebooks/00-assess-data-311-snow-related.ipynb)- Review 311 complaints data structures and explore data 
-2) [01-prep-snow-violations-data.ipynb](notebooks/01-prep-snow-violations-data.ipynb)- Acquire census data and 311 complaints data, parse dates and snow seasons
-3) [02-summarize-311-snow-complaints-by-community.ipynb](notebooks/02-summarize-311-snow-complaints-by-community.ipynb)- Summarize 311 complaints data to identify communities with highest and lowest per capita rates of 311 complaints
-
-### Part I- Preliminary Analysis of Fines
-1) [fines-01-prep-data.ipynb](notebooks/fines-01-prep-data.ipynb)- Read snow clearance fines data, parse dates, clean addresses and prepare for geocoding
-2) In **QGIS**:
+Data prepration involved the following steps:
+* Review 311 complaints data structures and explore data 
+* Acquire census data and 311 complaints data, parse dates and snow seasons
+* *Read snow clearance fines data, parse dates, clean addresses and prepare for geocoding
+* In **QGIS**:
     <ol>
     <li>gather files- points (CSV of snow clearance fines and addresses) and shapes (Chicago community areas GeoJSON)
     <li>import fines/addresses as Delimited Text Layer
@@ -40,8 +38,10 @@ My key findings for Part I are as follows:
     <li>perform point-in-polygon spatial join
     <li>export geocoded data as fines-geocoded-communities.csv
     </ol>
-3) [fines-02-summarize_ssw_part1.ipynb](notebooks/fines-02-summarize_ssw_part1.ipynb)- Summarize 311 complaints data to identify communities with highest and lowest per capita rates of 311 complaints
 
+Data analysis is summarized in:
+* [notebooks/02-analysis/ssw1-01-summarize-311-snow-complaints-by-community.ipynb](notebooks/02-analysis/ssw1-01-summarize-311-snow-complaints-by-community.ipynb)
+* [notebooks/02-analysis/ssw1-02-summarize-fines-by-community.ipynb](notebooks/02-analysis/ssw1-02-summarize-fines-by-community.ipynb)
 
 ## What I Learned
 I learned to geocode Administrative Hearings address data to get lat and long coordinates, and then spatially join this data to identify the community areas associated with each fine.
@@ -70,7 +70,3 @@ This repository is organized as follows:
    * **fines*** prefix designates notebooks specific to analysis of fines data for Part II of the story
    * **x*** prefix designates exploratory analyses
 * [results](results/)- analysis results for mapping & charting (e.g. in DataWrapper and Flourish)
-
-The following notebooks summarize data in support of <a href="https://southsideweekly.com/sidewalk-plowing-pilot-planned-for-next-winter/">Part I: Sidewalk-Plowing Pilot Planned for Next Winter</a></strong>:
-* [notebooks/02-analysis/ssw1-01-summarize-311-snow-complaints-by-community.ipynb](notebooks/02-analysis/ssw1-01-summarize-311-snow-complaints-by-community.ipynb)
-* [notebooks/02-analysis/ssw1-02-summarize-fines-by-community.ipynb](notebooks/02-analysis/ssw1-02-summarize-fines-by-community.ipynb)
