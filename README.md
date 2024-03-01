@@ -56,12 +56,13 @@ Due to typos and mispellings of addresses in the Administrative Hearings data on
 ## Guide to the Repository
 This repository is organized as follows:
 
-* [data](data/)- includes only my own manually-entered lookup table for CTA stations
-   * [01-raw](data/01-raw/) data in its original format
-   * [02-prepped](data/02-prepped/) transformed, parsed, etc.
-   * [03-geocoded](data/03-geocoded/) outputs from QGIS including geospatial data
-* [layers](layers/)- QGIS work in geocoding and spatially joining data
-* [notebooks](notebooks/)- steps through the analysis.
+* [data](data/)- nongeographic data
+   * [01-raw](data/01-raw/) source data in its original format
+   * [02-tidied](data/02-prepped/) transformed, parsed, normalized data
+   * [03-geocoded](data/03-geocoded/) dockets-to-addresses.csv geocoded by address to get lat & long coordinates
+   * [03-geocoded](data/04-spatially-joined/) dockets-to-addresses.csv joined to Chicago ward and community areas
+* [gis](gis/)- geographic data, including QGIS work in geocoding and spatially joining data
+* [notebooks](notebooks/)- data preparation and analysis in Python
    * **fines*** prefix designates notebooks specific to analysis of fines data for Part II of the story
    * **x*** prefix designates exploratory analyses
-* [results](results/)- results output from Jupyter Notebook for mapping & charting in DataWrapper and Flourish
+* [results](results/)- analysis results for mapping & charting (e.g. in DataWrapper and Flourish)
