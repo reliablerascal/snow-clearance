@@ -25,7 +25,7 @@ My key findings for Part I are as follows:
 ## Overview of Data Analysis
 
 ### Part I- 311 Complaints
-Data prepration involved the following steps:
+Data preparation involved the following steps:
 * Review 311 complaints data structures and explore data 
 * Acquire census data and 311 complaints data, parse dates and snow seasons
 * *Read snow clearance fines data, parse dates, clean addresses and prepare for geocoding
@@ -57,12 +57,12 @@ Due to typos and mispellings of addresses in the Administrative Hearings data on
 This repository is organized as follows:
 
 * [data](data/)- nongeographic data
-   * [01-raw](data/01-raw/) source data in its original format
-   * [02-tidied](data/02-prepped/) transformed, parsed, normalized data
-   * [03-geocoded](data/03-geocoded/) dockets-to-addresses.csv geocoded by address to get lat & long coordinates
-   * [04-spatially-joined](data/04-spatially-joined/) dockets-to-addresses.csv joined to Chicago ward and community areas
-   * [05-standardized](data/05-standardized/) dockets-to-addresses.csv joined to Chicago ward and community areas
-   * [06-aggregated](data/05-standardized/) dockets summarized by communities, wards, respondents, and addresses
+   * [00-raw](data/01-raw/) source data in its original format
+   * [01-tidied](data/02-prepped/) transformed, parsed, normalized data without calculated fields
+   * [02-geocoded](data/03-geocoded/) dockets-to-addresses.csv geocoded by address to get lat & long coordinates
+   * [03-spatially-joined](data/04-spatially-joined/) dockets-to-addresses.csv joined to Chicago ward and community areas
+   * [04-standardized](data/05-standardized/) dockets-to-addresses.csv joined to Chicago ward and community areas
+   * [05-aggregated](data/05-standardized/) dockets summarized by communities, wards, respondents, and addresses
 * [gis](gis/)- geographic data, including QGIS work in geocoding and spatially joining data
 * [notebooks](notebooks/)- data preparation and analysis in Python
    * [01-data-preparation](notebooks/01-data-preparation/) notebooks for data pipeline which normalize, geocode, and standardize data
