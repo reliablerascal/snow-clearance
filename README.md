@@ -67,6 +67,4 @@ This repository is organized as follows:
 * [notebooks](notebooks/)- data preparation and analysis in Python
    * [01-data-preparation](notebooks/01-data-preparation/) notebooks for data pipeline which normalize, geocode, and standardize data
    * [02-analysis](notebooks/02-analysis/) analysis notebooks which summarize data
-   * **fines*** prefix designates notebooks specific to analysis of fines data for Part II of the story
-   * **x*** prefix designates exploratory analyses
 * [results](results/)- analysis results for mapping & charting (e.g. in DataWrapper and Flourish)
