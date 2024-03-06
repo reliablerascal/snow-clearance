@@ -3,7 +3,7 @@
 This data analysis supports a two-part series for South Side Weekly:
 <ul>
 <li><strong><a href="https://southsideweekly.com/sidewalk-plowing-pilot-planned-for-next-winter/">Part I: Sidewalk-Plowing Pilot Planned for Next Winter</a></strong> explores Chicago's proposed Plow the Sidewalks Ordinance, while highlighting the disparity between a high concentration of unshoveled sidewalk complaints on the North Side vs. the high concentration of fines levied on the South Side.
-<li><strong>Part II: Fines Don’t Shovel Sidewalks, but the South Side Pays Anyway</strong> will explore different snow clearance enforcement strategies by three different city departments, and what types of property owners are getting fined on the South Side. 
+<li><strong>Part II: Fines Don’t Shovel Sidewalks</strong> will explore different snow clearance enforcement strategies by three different city departments, and how enforcement might be influenced by aldermanic perogative and urban landscape.
 </ul>
  
 ## Key Findings
@@ -63,6 +63,7 @@ This repository is organized as follows:
    * [03-spatially-joined](data/04-spatially-joined/) dockets-to-addresses.csv joined to Chicago ward and community areas
    * [04-standardized](data/05-standardized/) dockets-to-addresses.csv joined to Chicago ward and community areas
    * [05-aggregated](data/05-standardized/) dockets summarized by communities, wards, respondents, and addresses
+   * [06-finalized](data/06-finalized/) all finalized data preparation copied into this one location
 * [gis](gis/)- geographic data, including QGIS work in geocoding and spatially joining data
 * [notebooks](notebooks/)- data preparation and analysis in Python
    * [01-data-preparation](notebooks/01-data-preparation/) notebooks for data pipeline which normalize, geocode, and standardize data
