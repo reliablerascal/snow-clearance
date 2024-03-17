@@ -54,7 +54,7 @@ Due to typos and mispellings of addresses in the Administrative Hearings data on
 </ul>
 
 ## Guide to the Repository
-This repository is organized as follows:
+This repository is organized as follows. Note that some data including FOIA responses and court docket respondent names were removed to protect confidentiality.
 
 * [data](data/)- nongeographic data
    * [00-raw](data/01-raw/) source data in its original format
