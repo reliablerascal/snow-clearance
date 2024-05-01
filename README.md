@@ -63,7 +63,7 @@ Due to typos and mispellings of addresses in the Administrative Hearings data on
 This repository is organized as follows. Note that some data including FOIA responses and court docket respondent names were removed to protect confidentiality.
 
 * [data](data/)- nongeographic data
-   * [00-raw](data/01-raw/) source data in its original format
+   * [00-raw](data/00-raw/) source data in its original format
    * [01-tidied](data/01-tidied/) transformed, parsed, normalized data without calculated fields
    * [02-geocoded](data/02-geocoded/) dockets-to-addresses.csv geocoded by address to get lat & long coordinates
    * [03-spatially-joined](data/03-spatially-joined/) dockets-to-addresses.csv joined to Chicago ward and community areas
