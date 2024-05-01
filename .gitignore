@@ -2,6 +2,8 @@ data/archive/
 data/00-raw/FOIA-F067484-021424-snow-citations-streets-and-san.csv
 data/00-raw/FOIA-H064920-011124-snow-dockets.csv
 data/00-raw/FOIA-H067483-021424-snow-dockets-detailed.csv
+data/05-finalized/dockets-to-details-gis.csv
+data/05-finalized/dss-citations.csv
 gis/archive/
 notebooks/exploration/
 results/archive/
